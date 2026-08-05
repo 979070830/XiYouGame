@@ -12,6 +12,9 @@
   h1 { color: #ffd94a; font-size: 24px; margin-bottom: 4px; }
   h2 { color: #ffd94a; font-size: 17px; margin-top: 26px; }
   .sub { color: rgba(232,236,244,0.6); font-size: 13px; margin-bottom: 20px; }
+  .lang { text-align: right; font-size: 13px; margin-bottom: 12px; }
+  .lang a { color: #8ad8ff; cursor: pointer; margin-left: 10px; }
+  .lang a.on { color: #ffd94a; text-decoration: none; }
   a { color: #8ad8ff; }
   .email { display: inline-block; background: rgba(255,217,74,0.12); color: #ffd94a;
            padding: 6px 14px; border-radius: 6px; font-size: 15px; margin: 8px 0; }
@@ -22,37 +25,62 @@
 <body>
 <div class="wrap">
 
-<h1>技術支援 / Technical Support</h1>
-<div class="sub">悟空·十萬八千里 · Wukong: 108,000 Li</div>
+<p class="lang"><a id="aZh" href="?lang=zh">中文</a><a id="aEn" href="?lang=en">English</a></p>
 
-<h2>聯絡我們 / Contact Us</h2>
-<div class="item">電子郵件 / Email：<span class="email">1playeraaa@gmail.com</span></div>
-<div class="item">問題回報 / Report an issue：<a href="https://github.com/979070830/XiYouGame/issues" target="_blank">GitHub Issues</a></div>
-<div class="item">我們會在 3 個工作日內回覆 / We will respond within 3 business days.</div>
+<!-- 繁体中文 -->
+<div id="zh">
+  <h1>技術支援</h1>
+  <div class="sub">悟空·十萬八千里</div>
 
-<h2>常見問題 / FAQ</h2>
+  <h2>聯絡我們</h2>
+  <div class="item">電子郵件：<span class="email">1playeraaa@gmail.com</span></div>
+  <div class="item">問題回報：<a href="https://github.com/979070830/XiYouGame/issues" target="_blank">GitHub Issues</a></div>
+  <div class="item">我們會在 3 個工作日內回覆。</div>
 
-<div class="item"><b>如何恢復購買？</b><br>
-在遊戲主介面進入「法寶閣」（商城），點擊底部「恢復購買」按鈕即可。<br>
-<em>How to restore purchases?</em> Go to the Shop from the main menu and tap "Restore Purchases".</div>
+  <h2>常見問題</h2>
+  <div class="item"><b>如何恢復購買？</b><br>在遊戲主介面進入「法寶閣」（商城），點擊底部「恢復購買」按鈕即可。</div>
+  <div class="item"><b>內購未到帳怎麼辦？</b><br>請先嘗試「恢復購買」。若仍未到帳，附上 Apple 收據郵件聯繫我們。</div>
+  <div class="item"><b>如何解鎖更多角色？</b><br>角色可透過遊戲內成就（如擊敗特定妖怪、累積星星）或直接購買解鎖，兩種方式等效。</div>
+  <div class="item"><b>看不到廣告？</b><br>激勵廣告需要網路連接。請確認網路正常；新廣告單元可能需要最多 1 小時開始填充。</div>
 
-<div class="item"><b>內購未到帳怎麼辦？</b><br>
-請先嘗試「恢復購買」。若仍未到帳，附上 Apple 收據郵件聯繫我們。<br>
-<em>Purchase not delivered?</em> Try "Restore Purchases" first. If it still fails, contact us with your Apple receipt.</div>
+  <h2>隱私政策</h2>
+  <div class="item"><a href="https://979070830.github.io/XiYouGame/privacy.html?lang=zh">查看隱私政策</a></div>
+</div>
 
-<div class="item"><b>如何解鎖更多角色？</b><br>
-角色可透過遊戲內成就（如擊敗特定妖怪、累積星星）或直接購買解鎖，兩種方式等效。<br>
-<em>How to unlock characters?</em> Characters can be unlocked via in-game achievements or direct purchase — both are equivalent.</div>
+<!-- English -->
+<div id="en">
+  <h1>Technical Support</h1>
+  <div class="sub">Wukong: 108,000 Li</div>
 
-<div class="item"><b>看不到廣告？</b><br>
-激勵廣告需要網路連接。請確認網路正常；新廣告單元可能需要最多 1 小時開始填充。<br>
-<em>No ads showing?</em> Rewarded ads require internet. New ad units may take up to 1 hour to start filling.</div>
+  <h2>Contact Us</h2>
+  <div class="item">Email：<span class="email">1playeraaa@gmail.com</span></div>
+  <div class="item">Report an issue：<a href="https://github.com/979070830/XiYouGame/issues" target="_blank">GitHub Issues</a></div>
+  <div class="item">We will respond within 3 business days.</div>
 
-<h2>隱私政策 / Privacy Policy</h2>
-<div class="item"><a href="https://979070830.github.io/XiYouGame/privacy.html">查看隱私政策 / View Privacy Policy</a></div>
+  <h2>FAQ</h2>
+  <div class="item"><b>How to restore purchases?</b><br>Go to the Shop (Relic Pavilion) from the main menu and tap "Restore Purchases".</div>
+  <div class="item"><b>Purchase not delivered?</b><br>Try "Restore Purchases" first. If it still fails, contact us with your Apple receipt.</div>
+  <div class="item"><b>How to unlock characters?</b><br>Characters can be unlocked via in-game achievements or direct purchase — both are equivalent.</div>
+  <div class="item"><b>No ads showing?</b><br>Rewarded ads require internet. New ad units may take up to 1 hour to start filling.</div>
+
+  <h2>Privacy Policy</h2>
+  <div class="item"><a href="https://979070830.github.io/XiYouGame/privacy.html?lang=en">View Privacy Policy</a></div>
+</div>
 
 <div class="sub" style="margin-top:32px">© 2026 XiYou Studio. All rights reserved.</div>
 
 </div>
+<script>
+(function () {
+  var m = /[?&]lang=([a-zA-Z-]+)/.exec(location.search);
+  var l = m ? m[1] : (navigator.language || 'zh');
+  var isZh = String(l).toLowerCase().indexOf('zh') === 0;
+  document.getElementById('zh').style.display = isZh ? '' : 'none';
+  document.getElementById('en').style.display = isZh ? 'none' : '';
+  document.getElementById('aZh').className = isZh ? 'on' : '';
+  document.getElementById('aEn').className = isZh ? '' : 'on';
+  document.title = isZh ? '技術支援 · 悟空·十萬八千里' : 'Technical Support — Wukong: 108,000 Li';
+})();
+</script>
 </body>
 </html>
